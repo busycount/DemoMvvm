@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DataBinding</string>
+    <string name="tv_select">选择规格</string>
+    <string name="tv_label">2018短款T恤6色\n新品上市初夏款</string>
+    <string name="tv_add">加入进货车</string>
+    <string name="tv_cancel">取消</string>
+    <string name="tv_all">全部已选</string>
+    <string name="tv_size">尺寸</string>
+    <string name="tv_stock">库存</string>
+    <string name="tv_sale_num">开单数量</string>
+</resources>
