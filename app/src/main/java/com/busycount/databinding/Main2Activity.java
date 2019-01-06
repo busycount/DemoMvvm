@@ -9,7 +9,10 @@ import android.os.Bundle;
 import android.widget.SeekBar;
 
 import com.busycount.databinding.databinding.ActivityMain2Binding;
+import com.busycount.databinding.utils.ClickHelper;
 import com.busycount.databinding.vm.MyViewModel;
+
+import java.util.Date;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -28,6 +31,9 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        binding.setTime(new Date());
+        binding.setIsVisible(true);
+        binding.setClickHelper(new ClickHelper());
         binding.seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
