@@ -31,6 +31,8 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
+        getLifecycle().addObserver(new MyLifeListener());
+
         binding.setTime(new Date());
         binding.setIsVisible(true);
         binding.setClickHelper(new ClickHelper());

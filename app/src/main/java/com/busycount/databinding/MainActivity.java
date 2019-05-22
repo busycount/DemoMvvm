@@ -90,12 +90,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void configDetail() {
-        adapterDetail = new CommonAdapter<>(colourSkuVoListBean.getSkuVoList(), R.layout.item2, BR.skuVoListBean, new RvItemClick<Data.DataBean.DatasBean.SkuMapBean.ColourSkuVoListBean.SkuVoListBean>() {
-            @Override
-            public void onClicked(Data.DataBean.DatasBean.SkuMapBean.ColourSkuVoListBean.SkuVoListBean skuVoListBean) {
-                configSale(skuVoListBean);
-            }
-        });
+        adapterDetail = new CommonAdapter<>(colourSkuVoListBean.getSkuVoList(),
+                                            R.layout.item2,
+                                            BR.skuVoListBean,
+                                            new RvItemClick<Data.DataBean.DatasBean.SkuMapBean.ColourSkuVoListBean.SkuVoListBean>() {
+                                                @Override
+                                                public void onClicked(Data.DataBean.DatasBean.SkuMapBean.ColourSkuVoListBean.SkuVoListBean skuVoListBean) {
+                                                    configSale(skuVoListBean);
+                                                }
+                                            });
         binding.include.rvDetail.setLayoutManager(new LinearLayoutManager(this));
         binding.include.rvDetail.setAdapter(adapterDetail);
     }
